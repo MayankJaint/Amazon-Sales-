@@ -1,0 +1,30 @@
+# =========================
+# PYTHON & ENVIRONMENT
+# =========================
+__pycache__/
+*.py[cod]
+*~
+venv/
+env/
+.env
+.exam/
+# =========================
+# JUPYTER NOTEBOOKS
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# DATA & MACHINE LEARNING
+# =========================
+*.csv
+*.excel
+*.json
+*.parquet
+*.h5
+*.pkl
+
+# =========================
+# OS & SYSTEM JUNK
+# =========================
+.DS_Store
+Thumbs.db
