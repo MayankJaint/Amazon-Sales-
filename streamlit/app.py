@@ -365,25 +365,8 @@ st.divider()
 st.markdown(
     """
     <style>
-    /* 1. Sidebar width */
-    [data-testid="stSidebar"] { 
-        min-width: 350px; 
-        max-width: 350px; 
-    }
     
-    /* 2. Fixed Dark KPI Cards */
-    [data-testid="stMetric"] {
-        background-color: #1E1E1E; /* Forces the premium dark background back */
-        color: white;              /* Forces text to stay white in all themes */
-        border: 1px solid #333333; 
-        border-top: 4px solid #FF9900; 
-        padding: 15px 20px;        
-        border-radius: 10px;       
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); 
-        text-align: center;        
-    }
-    
-    /* 3. The Logo "Sticker" Fix (Keep this!) */
+    /* 1. The Logo "Sticker" Fix (Keep this!) */
     [data-testid="stSidebar"] img {
         background-color: white; 
         padding: 10px;
