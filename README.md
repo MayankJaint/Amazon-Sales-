@@ -1,4 +1,6 @@
 # 🛒 Amazon India E-Commerce Deep Dive: EDA & NLP Analysis
+Streamlit deployed link: https://mayank-kumar-amazon.streamlit.app/
+
 
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/)
 [![Pandas](https://img.shields.io/badge/Pandas-Data_Manipulation-150458.svg)](https://pandas.pydata.org/)
