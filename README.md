@@ -1,4 +1,4 @@
-#🛒 Amazon India E-Commerce Deep Dive: EDA & NLP Analysis
+# 🛒 Amazon India E-Commerce Deep Dive: EDA & NLP Analysis
 
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/)
 [![Pandas](https://img.shields.io/badge/Pandas-Data_Manipulation-150458.svg)](https://pandas.pydata.org/)
@@ -25,28 +25,28 @@ The initial goal was to analyze basic correlations (Price vs. Rating), but the p
 ### 1. The "Overplotting" Illusion (Price vs. Rating)
 
 > **The Insight:** Initially, standard scatter plots hid the true density of the data behind a solid wall of dots. By applying mathematical **jitter** and **alpha transparency**, the true distribution was revealed: massive clusters of products sit solidly at the 3.8 to 4.2 rating mark, heavily concentrated at the lower price tiers.
-![Actual Price vs Rating Scatter](Graphs\actual%20price%20vs%20rating.png)
-![Discounted Price vs Rating Scatter](Graphs\Discount%20Percentage.png)
+![Actual Price vs Rating Scatter](Graphs/actual%20price%20vs%20rating.png)
+![Discounted Price vs Rating Scatter](Graphs/Discount%20Percentage.png)
 
 ### 2. Market Segmentation (Hierarchical Treemap)
 ![Amazon Treemap](images/treemap.png)
 > **The Insight:** Standard bar charts failed to capture the Parent-Child hierarchy of Amazon's catalog. Using Plotly, this interactive Treemap successfully maps the ecosystem, instantly revealing which specific subcategories (like Cables or Smartwatches) physically dominate their massive parent categories.
-![Amazon Treemap](Graphs\main%20category%20vs%20sub%20category.png)
+![Amazon Treemap](Graphs/main%20category%20vs%20sub%20category.png)
 
 
 ### 3. Category Distributions (Violin-Box Hybrids)
 ![Violin Plot Ratings](images/violin_plot.png)
 > **The Insight:** To understand market quality, we compared numerical ratings across categorical groupings. This hybrid plot embeds a statistical boxplot inside a density violin, proving that while certain categories have massive volumes, their median ratings often skew lower and have a much wider variance (risk) than others.
-![Plotly Violin Plot](Graphs\Violin%20plot.png)
+![Plotly Violin Plot](Graphs/Violin%20plot.png)
 ### 4. 4D Multivariate Analysis (3D Scatter)
 ![3D Scatter Plot](images/3d_scatter.png)
 > **The Insight:** Real-world retail success relies on multiple factors at once. This 3D mapping plots *Actual Price (X)*, *Discount Percentage (Y)*, and *Rating (Z)*, color-coded by *Category*. It uncovers hidden spatial "sweet spots" where specific discount tiers predictably yield 4.5+ star ratings.
-![3D Plot](Graphs\3D.png)
+![3D Plot](Graphs/3D.png)
 
 ### 5. Customer Sentiment Analysis (NLP Word Clouds)
 ![Word Cloud Analysis](images/word_clouds.png)
 > **The Insight:** Numbers indicate *what* happened; text explains *why*. By extracting thousands of review titles, applying custom Stopword filters, and splitting them by rating thresholds (>4.2 vs <3.5), these Word Clouds visually map exact customer pain points against product praise.
-![Top Repetitive Words on Reviews](Graphs\Wordcloud.png)
+![Top Repetitive Words on Reviews](Graphs/Wordcloud.png)
 
 ### 1. Upgraded Visualizations (Moving to Interactive)
 Static charts often hide the true density of data due to "overplotting." By upgrading to interactive **Plotly** visualizations, I was able to map the data more accurately:
