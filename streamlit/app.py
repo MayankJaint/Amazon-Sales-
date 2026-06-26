@@ -13,7 +13,7 @@ import matplotlib.pyplot as plt
 @st.cache_data
 def load_data():
     # Ensure 'amazon_EDA.csv' is in the exact same folder as this app.py file
-    df = pd.read_csv("amazon_EDA.csv")
+    df = pd.read_csv("streamlit/amazon_EDA.csv")
     # Clean price and ratings
     df["discounted_price"] = pd.to_numeric(
         df["discounted_price"].astype(str).str.replace("₹", "").str.replace(",", ""),
